@@ -1,0 +1,6 @@
+[repositories]
+  local
+  typesafe-releases: http://repo.typesafe.com/typesafe/ivy-releases/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]
+  sbt-plugin-releases: http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]
+  my-maven-proxy-releases: http://ec2-54-173-168-127.compute-1.amazonaws.com:8080/archiva/repository/internal/
+  maven-central-releases: http://repo1.maven.org/maven2
