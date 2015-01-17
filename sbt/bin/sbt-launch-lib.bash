@@ -192,7 +192,8 @@ run() {
     addJava "-Djline.terminal=jline.UnixTerminal"
     addJava "-Dsbt.cygwin=true"
   fi
-  
+
+  # Comment this out to show how the problem disappears when not overriding the repos  
   mentor_opts="-Dsbt.override.build.repos=true -Dsbt.repository.config=${sbt_home}/conf/repositories"
   
   # run sbt

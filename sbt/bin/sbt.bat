@@ -23,7 +23,7 @@ FOR /F "tokens=* eol=# usebackq delims=" %%i IN ("%FN%") DO (
   set CFG_OPTS=!CFG_OPTS! !DO_NOT_REUSE_ME!
 )
 
-rem Adding our options here since we need %SBT_HOME%
+rem Comment this out to show how the problem disappears when not overriding the repos
 set MENTOR_OPTS=-Dsbt.override.build.repos=true -Dsbt.repository.config="%SBT_HOME%\..\conf\repositories"
 
 rem We use the value of the JAVACMD environment variable if defined
