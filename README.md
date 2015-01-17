@@ -49,7 +49,7 @@ If we reconfigure the project and sbt to specify rubygems as a resolver in `buil
 2. Comment [line 197 in `sbt-launch-lib.bash`](https://github.com/joescii/sbt-reproduced/blob/issue-752/sbt/bin/sbt-launch-lib.bash#L197)
 3. And if you're really being thorough and checking this on Windows, comment [line 27 in `sbt.bat`](https://github.com/joescii/sbt-reproduced/blob/issue-752/sbt/bin/sbt.bat#L27)
 
-Now the dependencies being resolving.
+Now the dependencies begin resolving.
 
 ```text
 > ./sbt/bin/sbt update
