@@ -1,3 +1,5 @@
+enablePlugins(JavaAppPackaging)
+
 scalaVersion := "2.11.11"
 
 libraryDependencies := Seq(

@@ -3,7 +3,7 @@ import java.io.{ByteArrayInputStream, ByteArrayOutputStream, ObjectInputStream, 
 /**
   * Created by joescii on 8/4/17.
   */
-object code {
+object code extends App {
   def roundTrip[T](obj: T): T = {
     def serialize(in: T): Array[Byte] = {
       val bos = new ByteArrayOutputStream()
@@ -21,4 +21,8 @@ object code {
 
     deserialize(serialize(obj))
   }
+
+  println("Serializing NodeSeq.Empty...")
+  println(roundTrip(scala.xml.NodeSeq.Empty))
+  println("See? It works!!")
 }
